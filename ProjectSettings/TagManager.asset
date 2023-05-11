@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Decoracion
+    uniqueID: 2859658081
+    locked: 0
+  - name: Terreno
+    uniqueID: 4004871243
+    locked: 0
