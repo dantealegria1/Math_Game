@@ -6,6 +6,12 @@ public class Saltar : MonoBehaviour
 {
     public float jumpForce = 10f; // The force of the jump
     private bool isGrounded; // Whether or not the character is on the ground
+    private Animator _animator;
+
+    void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -13,6 +19,11 @@ public class Saltar : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, jumpForce);
             isGrounded = false;
+            _animator.SetBool("Salta", true);
+        }
+        else
+        {
+            _animator.SetBool("Salta", false);
         }
     }
 
@@ -24,3 +35,4 @@ public class Saltar : MonoBehaviour
         }
     }
 }
+
