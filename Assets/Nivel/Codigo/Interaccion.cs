@@ -25,7 +25,7 @@ public class Interaccion : MonoBehaviour
         if (cerca && Input.GetKeyDown(KeyCode.G))
         {
             Verdadero = true;
-            Debug.Log("VERDADERO");
+            Debug.Log("VERDADERO"); 
         }
         if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio) )
         {
