@@ -384,7 +384,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 41a44d2b8ed80fb469ecb4171a459d4b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.053
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -516,7 +516,7 @@ Transform:
   - {fileID: 1495615699}
   - {fileID: 591088585}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &294420324
 SpriteRenderer:
@@ -664,7 +664,7 @@ RectTransform:
   m_Children:
   - {fileID: 272999501}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -701,8 +701,7 @@ Transform:
   m_LocalPosition: {x: 0.0589, y: -0.33, z: 0}
   m_LocalScale: {x: 1.0683606, y: 0.8899574, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 718499314}
+  m_Children: []
   m_Father: {fileID: 406472591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4002,7 +4001,7 @@ Transform:
   m_Children:
   - {fileID: 346988399}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &406472592
 Tilemap:
@@ -4347,6 +4346,7 @@ GameObject:
   - component: {fileID: 718499316}
   - component: {fileID: 718499315}
   - component: {fileID: 718499317}
+  - component: {fileID: 718499318}
   m_Layer: 0
   m_Name: Pato
   m_TagString: Untagged
@@ -4461,12 +4461,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718499310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3931, y: -1.0417, z: 0}
-  m_LocalScale: {x: 6.08545, y: 7.1405134, z: 11.754998}
+  m_LocalPosition: {x: -5.702875, y: -1.2570686, z: 0}
+  m_LocalScale: {x: 6.501455, y: 6.354753, z: 11.754998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 346988399}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &718499315
 MonoBehaviour:
@@ -4514,6 +4514,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &718499318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718499310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f546deb07840445967048143ca8e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  Numero_1: {fileID: 1442900445}
+  cerca: 0
+  Verdadero: 0
 --- !u!1 &1039541203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,7 +4673,7 @@ Transform:
   m_Children:
   - {fileID: 1187151744}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137880067
 GameObject:
@@ -4988,7 +5006,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442900445
 GameObject:
@@ -5001,9 +5019,9 @@ GameObject:
   - component: {fileID: 1442900446}
   - component: {fileID: 1442900447}
   - component: {fileID: 1442900448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Numero_1
-  m_TagString: Untagged
+  m_TagString: Numero_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5167,7 +5185,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495615697
 GameObject:
@@ -5335,7 +5353,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1652914609
 GameObject:
@@ -7317,7 +7335,7 @@ Transform:
   - {fileID: 1687486234}
   - {fileID: 1039541204}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &2081480846
 TilemapCollider2D:
