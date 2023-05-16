@@ -51,3 +51,9 @@ TagManager:
   - name: Barreras/Numeros
     uniqueID: 201056825
     locked: 0
+  - name: portada
+    uniqueID: 4049947353
+    locked: 0
+  - name: portada2
+    uniqueID: 331835693
+    locked: 0
