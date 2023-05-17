@@ -4384,7 +4384,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473339702
 MonoBehaviour:
@@ -4582,8 +4582,8 @@ GameObject:
   - component: {fileID: 718499316}
   - component: {fileID: 718499315}
   - component: {fileID: 718499317}
-  - component: {fileID: 718499318}
   - component: {fileID: 718499319}
+  - component: {fileID: 718499320}
   m_Layer: 0
   m_Name: Pato
   m_TagString: Untagged
@@ -4751,24 +4751,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &718499318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718499310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f546deb07840445967048143ca8e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
-  Numero_1: {fileID: 1442900445}
-  cerca: 0
-  Verdadero: 0
 --- !u!114 &718499319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4792,6 +4774,24 @@ MonoBehaviour:
   Verdadero_malo: 0
   vidas: 3
   Vidas: {fileID: 1539284035}
+--- !u!114 &718499320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718499310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33417626ef37d644ba9700379f288d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  Numero_1: {fileID: 1442900445}
+  cerca: 0
+  Verdadero: 0
 --- !u!1 &876875534
 GameObject:
   m_ObjectHideFlags: 0

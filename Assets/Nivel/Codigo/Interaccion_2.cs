@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Interaccion : MonoBehaviour
+
+public class Interaccion_2 : MonoBehaviour
 {
+
     public LayerMask mask;
     public GameObject Numero_1;
     public bool cerca;
@@ -25,13 +27,13 @@ public class Interaccion : MonoBehaviour
         if (cerca && Input.GetKeyDown(KeyCode.G))
         {
             Verdadero = true;
-            Debug.Log("VERDADERO"); 
+            Debug.Log("VERDADERO");
         }
-        if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio) )
+        if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio))
         {
             Debug.Log("NICE");
-            SceneManager.LoadScene("Nivel_2_nice");
+            SceneManager.LoadScene("Nivel_1");
         }
- 
+
     }
 }
