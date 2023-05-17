@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Numeros_aleatorios : MonoBehaviour
 {
@@ -21,16 +22,22 @@ public class Numeros_aleatorios : MonoBehaviour
     public Vector2 posicion8 = new Vector2(31f, -2f);
     public Vector2 posicion9 = new Vector2(10.38f, 1.65f);
     public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
+
+    public TextMeshProUGUI Ayuda;
     // Start is called before the first frame update
     void Start()
     {
-        
+
         int Numero2, Numero3, Numero4, Numero5;
 
-        Numero2 = Random.Range(1, 20);
-        Numero3 = Random.Range(1, 20);
-        Numero4 = Random.Range(1, 20);
-        Numero5 = Random.Range(1, 20);
+        int.TryParse(Ayuda.text, out int ayudaNumero);
+        do
+        {
+            Numero2 = Random.Range(1, 20);
+            Numero3 = Random.Range(1, 20);
+            Numero4 = Random.Range(1, 20);
+            Numero5 = Random.Range(1, 20);
+        } while (Numero2 == ayudaNumero || Numero3 == ayudaNumero || Numero4 == ayudaNumero || Numero5 == ayudaNumero);
 
         SetSprite(Numero_2, Numero2);
         SetSprite(Numero_3, Numero3);
