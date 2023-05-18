@@ -11,7 +11,7 @@ public class Interaccion_malos : MonoBehaviour
     public GameObject Numero_5;
     public bool cerca;
     public bool Verdadero_malo;
-    public int vidas = 3;
+    public int vidas = 1;
     public TextMeshProUGUI Vidas;
 
     private const string HighScoreKey = "HighScore";
@@ -38,8 +38,7 @@ public class Interaccion_malos : MonoBehaviour
 
         if (vidas == 0)
         {
-            PlayerPrefs.SetInt(HighScoreKey, 0); // Restablecer highScore a 0
-            PlayerPrefs.Save();
+               
             SceneManager.LoadScene("Perdiste");
         }
     }

@@ -15,6 +15,16 @@ public class Jugar_Boton : MonoBehaviour
             PlayerPrefs.SetString(DificultadKey, "Facil");
             PlayerPrefs.Save();
             Debug.Log("facil");
+        }else if(Nombre == "Nivel_1 - Normal")
+        {
+            PlayerPrefs.SetString(DificultadKey, "Normal");
+            PlayerPrefs.Save();
+            Debug.Log("normal");
+        }else if(Nombre == "Nivel_1 - Dificil(1)")
+        {
+            PlayerPrefs.SetString(DificultadKey, "Dificil");
+            PlayerPrefs.Save();
+            Debug.Log("dificil");
         }
     }
 

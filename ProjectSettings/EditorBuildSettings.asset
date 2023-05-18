@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel_2_nice.unity
     guid: af8eb714b4b73a940920fea0e06778f7
+  - enabled: 1
+    path: Assets/Scenes/Nivel_1 - Normal.unity
+    guid: 334593d2ccb4a7544b556ffeeacd90c3
+  - enabled: 1
+    path: Assets/Scenes/Nivel_2_nice - Normal.unity
+    guid: 86905da71b1dba348962930ab21c8796
+  - enabled: 1
+    path: Assets/Scenes/Nivel_1 - Dificil (1).unity
+    guid: bbbdb0c19592ba445b06edad1bc8f057
+  - enabled: 1
+    path: Assets/Scenes/Nivel_2_nice - Dificil.unity
+    guid: 23193094d91237449b44a1d2c6b716ae
   m_configObjects: {}
