@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Interaccion : MonoBehaviour
+public class Interaccion_2 : MonoBehaviour
 {
+
     public LayerMask mask;
     public GameObject Numero_1;
     public bool cerca;
@@ -13,6 +14,7 @@ public class Interaccion : MonoBehaviour
     Vector2 referencia = new Vector2(41, -1);
     float radio = 2f;
     public TextMeshProUGUI tmp; // Referencia al objeto de texto
+
 
     private void Start()
     {
@@ -31,11 +33,11 @@ public class Interaccion : MonoBehaviour
             Debug.Log("VERDADERO");
             tmp.gameObject.SetActive(true);
         }
-        if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio) )
+        if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio))
         {
             Debug.Log("NICE");
-            SceneManager.LoadScene("Nivel_2_nice");
+            SceneManager.LoadScene("Nivel_1");
         }
- 
+
     }
 }

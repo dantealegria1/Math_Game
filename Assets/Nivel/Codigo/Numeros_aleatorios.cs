@@ -23,14 +23,15 @@ public class Numeros_aleatorios : MonoBehaviour
     public Vector2 posicion9 = new Vector2(10.38f, 1.65f);
     public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
 
+
     public TextMeshProUGUI Ayuda;
     // Start is called before the first frame update
     void Start()
     {
 
         int Numero2, Numero3, Numero4, Numero5;
-
         int.TryParse(Ayuda.text, out int ayudaNumero);
+
         do
         {
             Numero2 = Random.Range(1, 20);
@@ -38,6 +39,7 @@ public class Numeros_aleatorios : MonoBehaviour
             Numero4 = Random.Range(1, 20);
             Numero5 = Random.Range(1, 20);
         } while (Numero2 == ayudaNumero || Numero3 == ayudaNumero || Numero4 == ayudaNumero || Numero5 == ayudaNumero);
+
 
         SetSprite(Numero_2, Numero2);
         SetSprite(Numero_3, Numero3);
@@ -55,10 +57,10 @@ public class Numeros_aleatorios : MonoBehaviour
         posiciones.Add(posicion9);
         posiciones.Add(posicion10);
 
-        // Obtener la posici髇 del objeto Numero_1
+        // Obtener la posici贸n del objeto Numero_1
         Vector2 posicionNumero1 = Numero_1.transform.position;
 
-        // Eliminar la posici髇 de Numero_1 de la lista
+        // Eliminar la posici贸n de Numero_1 de la lista
         posiciones.Remove(posicionNumero1);
 
 
@@ -93,16 +95,16 @@ public class Numeros_aleatorios : MonoBehaviour
 
   private void RANDOM(GameObject Numero)
     {
-        // Generar un 韓dice aleatorio
+        // Generar un 铆ndice aleatorio
         int indiceAleatorio = Random.Range(0, posiciones.Count);
 
-        // Obtener la posici髇 aleatoria
+        // Obtener la posici贸n aleatoria
         Vector2 posicionAleatoria = posiciones[indiceAleatorio];
 
-        // Eliminar la posici髇 seleccionada de la lista
+        // Eliminar la posici贸n seleccionada de la lista
         posiciones.RemoveAt(indiceAleatorio);
 
-        // Establecer la posici髇 del objeto Numero_1
+        // Establecer la posici贸n del objeto Numero_1
         Numero.transform.position = posicionAleatoria;
 
     }
