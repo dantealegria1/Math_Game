@@ -24,12 +24,9 @@ public class Mostrar_Operaciones : MonoBehaviour
     public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
     public Vector2 posicion11 = new Vector2(-7.1f, 0.82f);
 
-    public TextMeshProUGUI Ayuda;
-
     // Start is called before the first frame update
     void Start()
     {
-        Ayuda.gameObject.SetActive(false);
         // Agregar las posiciones a la lista
         posiciones.Add(posicion1);
         posiciones.Add(posicion2);
@@ -49,7 +46,7 @@ public class Mostrar_Operaciones : MonoBehaviour
         // Obtener la posición aleatoria
         Vector2 posicionAleatoria = posiciones[indiceAleatorio];
 
-
+ 
         // Establecer la posición del objeto Numero_1
         Numero_1.transform.position = posicionAleatoria;
 
@@ -58,8 +55,7 @@ public class Mostrar_Operaciones : MonoBehaviour
         int Operando2 = Random.Range(1, 10);
 
         // Calculate the result
-        int Resultado = Operando1 + Operando2; 
-        Ayuda.text = Resultado.ToString();
+        int Resultado = Operando1 + Operando2;
 
         // Set the text of Operacioncita to display the random operands
         Operacioncita.text = Operando1.ToString() + " + " + Operando2.ToString() + " =";
