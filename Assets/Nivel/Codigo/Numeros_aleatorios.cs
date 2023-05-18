@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class Numeros_aleatorios : MonoBehaviour
 {
     public GameObject Numero_2; // Referencia al objeto
@@ -27,7 +28,7 @@ public class Numeros_aleatorios : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         int Numero2, Numero3, Numero4, Numero5;
         int.TryParse(Ayuda.text, out int ayudaNumero);
 
@@ -56,10 +57,10 @@ public class Numeros_aleatorios : MonoBehaviour
         posiciones.Add(posicion9);
         posiciones.Add(posicion10);
 
-        // Obtener la posici髇 del objeto Numero_1
+        // Obtener la posici贸n del objeto Numero_1
         Vector2 posicionNumero1 = Numero_1.transform.position;
 
-        // Eliminar la posici髇 de Numero_1 de la lista
+        // Eliminar la posici贸n de Numero_1 de la lista
         posiciones.Remove(posicionNumero1);
 
 
@@ -94,16 +95,16 @@ public class Numeros_aleatorios : MonoBehaviour
 
   private void RANDOM(GameObject Numero)
     {
-        // Generar un 韓dice aleatorio
+        // Generar un 铆ndice aleatorio
         int indiceAleatorio = Random.Range(0, posiciones.Count);
 
-        // Obtener la posici髇 aleatoria
+        // Obtener la posici贸n aleatoria
         Vector2 posicionAleatoria = posiciones[indiceAleatorio];
 
-        // Eliminar la posici髇 seleccionada de la lista
+        // Eliminar la posici贸n seleccionada de la lista
         posiciones.RemoveAt(indiceAleatorio);
 
-        // Establecer la posici髇 del objeto Numero_1
+        // Establecer la posici贸n del objeto Numero_1
         Numero.transform.position = posicionAleatoria;
 
     }

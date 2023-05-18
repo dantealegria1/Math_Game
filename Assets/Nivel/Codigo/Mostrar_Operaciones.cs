@@ -6,6 +6,7 @@ using TMPro;
 public class Mostrar_Operaciones : MonoBehaviour
 {
     public TextMeshProUGUI Operacioncita;
+    public TextMeshProUGUI Ayuda;
     public GameObject Numero_1;
 
     public List<Vector2> posiciones = new List<Vector2>(); // Lista para almacenar todas las posiciones
@@ -21,6 +22,7 @@ public class Mostrar_Operaciones : MonoBehaviour
     public Vector2 posicion8 = new Vector2(31f, -2f);
     public Vector2 posicion9 = new Vector2(10.38f, 1.65f);
     public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
+    public Vector2 posicion11 = new Vector2(-7.1f, 0.82f);
 
     public TextMeshProUGUI Ayuda;
 
@@ -39,6 +41,7 @@ public class Mostrar_Operaciones : MonoBehaviour
         posiciones.Add(posicion8);
         posiciones.Add(posicion9);
         posiciones.Add(posicion10);
+        posiciones.Add(posicion11);
 
         // Generar un índice aleatorio
         int indiceAleatorio = Random.Range(0, posiciones.Count);
@@ -60,6 +63,7 @@ public class Mostrar_Operaciones : MonoBehaviour
 
         // Set the text of Operacioncita to display the random operands
         Operacioncita.text = Operando1.ToString() + " + " + Operando2.ToString() + " =";
+        Ayuda.text = Resultado.ToString();
 
         // Change the sprite of Numero_1 to the result
         string spriteName = "Numero/" + Resultado.ToString(); // Use the result as the sprite name
