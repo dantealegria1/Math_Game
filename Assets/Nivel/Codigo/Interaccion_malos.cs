@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -16,6 +14,8 @@ public class Interaccion_malos : MonoBehaviour
     public int vidas = 3;
     public TextMeshProUGUI Vidas;
 
+    private const string HighScoreKey = "HighScore";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +27,19 @@ public class Interaccion_malos : MonoBehaviour
     void Update()
     {
         cerca = Physics2D.OverlapCircle(transform.position, 1f, mask);
+
         if (cerca && Input.GetKeyDown(KeyCode.G))
         {
             Verdadero_malo = true;
             Debug.Log("ERRORR");
             vidas = vidas - 1;
-            Vidas.text = " x "+vidas.ToString();
+            Vidas.text = " x " + vidas.ToString();
         }
+
         if (vidas == 0)
         {
+            PlayerPrefs.SetInt(HighScoreKey, 0); // Restablecer highScore a 0
+            PlayerPrefs.Save();
             SceneManager.LoadScene("Perdiste");
         }
     }

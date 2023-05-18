@@ -14,13 +14,19 @@ public class Interaccion_2 : MonoBehaviour
     Vector2 referencia = new Vector2(41, -1);
     float radio = 2f;
     public TextMeshProUGUI tmp; // Referencia al objeto de texto
+    public TextMeshProUGUI Puntaje; // Referencia al objeto de texto
 
+    private const string HighScoreKey = "HighScore";
+
+    private int highScore;
 
     private void Start()
     {
+        highScore = PlayerPrefs.GetInt(HighScoreKey);
         mask = LayerMask.GetMask("Objetos");
         cerca = false;
         tmp.gameObject.SetActive(false);
+        Puntaje.text = highScore.ToString();
     }
 
     private void Update()
@@ -35,6 +41,9 @@ public class Interaccion_2 : MonoBehaviour
         }
         if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio))
         {
+            highScore++;
+            PlayerPrefs.SetInt(HighScoreKey, highScore);
+            PlayerPrefs.Save();
             Debug.Log("NICE");
             SceneManager.LoadScene("Nivel_1");
         }

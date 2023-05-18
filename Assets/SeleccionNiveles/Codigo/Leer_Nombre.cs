@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Leer_Nombre : MonoBehaviour
 {
+    private const string NombreKey = "Nombre";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class Leer_Nombre : MonoBehaviour
 
     public void SetInputText(string text)
     {
-        Debug.Log(text); 
+        PlayerPrefs.SetString(NombreKey, text);
+        PlayerPrefs.Save();
+        Debug.Log("Nombre guardado: " + text);
     }
-} 
+}

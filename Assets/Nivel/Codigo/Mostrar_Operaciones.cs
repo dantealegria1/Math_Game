@@ -24,7 +24,7 @@ public class Mostrar_Operaciones : MonoBehaviour
     public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
     public Vector2 posicion11 = new Vector2(-7.1f, 0.82f);
 
-    public TextMeshProUGUI Ayuda;
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,8 +62,8 @@ public class Mostrar_Operaciones : MonoBehaviour
         Ayuda.text = Resultado.ToString();
 
         // Set the text of Operacioncita to display the random operands
-        Operacioncita.text = Operando1.ToString() + " + " + Operando2.ToString() + " =";
-        Ayuda.text = Resultado.ToString();
+        Operacioncita.text = Operando1.ToString() + " + " + Operando2.ToString();
+
 
         // Change the sprite of Numero_1 to the result
         string spriteName = "Numero/" + Resultado.ToString(); // Use the result as the sprite name
