@@ -4,26 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Interaccion_2 : MonoBehaviour
+public class Interaccion_Dificil : MonoBehaviour
 {
+
     public LayerMask mask;
     public GameObject Numero_1;
     public bool cerca;
     public bool Verdadero;
     Vector2 referencia = new Vector2(41, -1);
     float radio = 2f;
-    public TextMeshProUGUI tmp; // Referencia al objeto de texto
+    public TextMeshProUGUI tmp; // Referencia al objeto de text
     public TextMeshProUGUI Puntaje; // Referencia al objeto de texto
 
     private const string HighScoreKey = "HighScore";
-    private const string DificultadKey = "dificultad";
 
     private int highScore;
 
-
     private void Start()
     {
-        
         highScore = PlayerPrefs.GetInt(HighScoreKey);
         mask = LayerMask.GetMask("Objetos");
         cerca = false;
@@ -40,20 +38,17 @@ public class Interaccion_2 : MonoBehaviour
             Verdadero = true;
             Debug.Log("VERDADERO");
             tmp.gameObject.SetActive(true);
-        }
 
+        }
         if (Verdadero && (Vector2.Distance(transform.position, referencia) <= radio))
         {
             highScore++;
             PlayerPrefs.SetInt(HighScoreKey, highScore);
             PlayerPrefs.Save();
             Debug.Log("NICE");
-
-
-                SceneManager.LoadScene("Nivel_1");
-
+            SceneManager.LoadScene("Nivel_2_nice - Dificil");
 
         }
+
     }
 }
-

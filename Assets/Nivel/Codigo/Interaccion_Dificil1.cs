@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
-
-public class Interaccion_2 : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class Interaccion_Dificil1 : MonoBehaviour
 {
     public LayerMask mask;
     public GameObject Numero_1;
@@ -23,7 +22,7 @@ public class Interaccion_2 : MonoBehaviour
 
     private void Start()
     {
-        
+
         highScore = PlayerPrefs.GetInt(HighScoreKey);
         mask = LayerMask.GetMask("Objetos");
         cerca = false;
@@ -50,10 +49,9 @@ public class Interaccion_2 : MonoBehaviour
             Debug.Log("NICE");
 
 
-                SceneManager.LoadScene("Nivel_1");
+            SceneManager.LoadScene("Nivel_1 - Dificil (1)");
 
 
         }
     }
 }
-

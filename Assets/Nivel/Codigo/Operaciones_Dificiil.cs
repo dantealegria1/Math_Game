@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Mostrar_Operaciones : MonoBehaviour
+public class Operaciones_Dificiil : MonoBehaviour
 {
     public TextMeshProUGUI Operacioncita;
     public TextMeshProUGUI Ayuda;
@@ -54,16 +54,16 @@ public class Mostrar_Operaciones : MonoBehaviour
         Numero_1.transform.position = posicionAleatoria;
 
         // Generate random operands
-        int Operando1 = Random.Range(1, 10);
-        int Operando2 = Random.Range(1, 10);
+        int Operando1 = Random.Range(1, 5);
+        int Operando2 = Random.Range(1, 6);
 
         // Calculate the result
-        int Resultado = Operando1 + Operando2; 
+        int Resultado = Operando1 * Operando2;
         Ayuda.text = Resultado.ToString();
 
         // Set the text of Operacioncita to display the random operands
-        
-        Operacioncita.text = Operando1.ToString() + " + " + Operando2.ToString();
+
+        Operacioncita.text = Operando1.ToString() + " x " + Operando2.ToString();
 
 
         // Change the sprite of Numero_1 to the result
