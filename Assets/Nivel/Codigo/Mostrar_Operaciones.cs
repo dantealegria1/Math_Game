@@ -27,6 +27,7 @@ public class Mostrar_Operaciones : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Ayuda.gameObject.SetActive(false);
         // Agregar las posiciones a la lista
         posiciones.Add(posicion1);
         posiciones.Add(posicion2);
