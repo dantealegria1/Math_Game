@@ -130,8 +130,8 @@ Library: lib_burst_generated
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Flow.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
---root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
+--root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Core.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll
@@ -281,8 +281,8 @@ Library: lib_burst_generated
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Flow.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
---root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
+--root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Core.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=D:\pruebas\juegoMat\JuegoMatematicas\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll

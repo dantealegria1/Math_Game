@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-
 using UnityEngine.SceneManagement;
-
-public class Interaccion_2_Normal : MonoBehaviour
+using TMPro;
+public class Interaccion_1_Normal : MonoBehaviour
 {
     public LayerMask mask;
     public GameObject Numero_1;
@@ -51,7 +49,7 @@ public class Interaccion_2_Normal : MonoBehaviour
             Debug.Log("NICE");
 
 
-            SceneManager.LoadScene("Nivel_1 - Normal");
+            SceneManager.LoadScene("Nivel_2_nice - Normal");
 
 
         }
