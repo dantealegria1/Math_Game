@@ -51,7 +51,7 @@ public class Interaccion_2_Normal : MonoBehaviour
             Debug.Log("NICE");
 
 
-            SceneManager.LoadScene("Nivel_1-Normal");
+            SceneManager.LoadScene("Nivel_1 - Normal");
 
 
         }
