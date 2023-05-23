@@ -54,7 +54,7 @@ public class Mostrar_Operaciones_Normal : MonoBehaviour
         Numero_1.transform.position = posicionAleatoria;
 
         // Generate random operands
-        int Operando1 = Random.Range(1, 20);
+        int Operando1 = Random.Range(1, 10);
         int Operando2 = Random.Range(1, 10);
         int Resultado;
         if (Operando1<Operando2)
