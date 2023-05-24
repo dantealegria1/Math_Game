@@ -21,8 +21,8 @@ public class Operaciones_Dificiil : MonoBehaviour
     public Vector2 posicion7 = new Vector2(35.05f, -2f);
     public Vector2 posicion8 = new Vector2(31f, -2f);
     public Vector2 posicion9 = new Vector2(10.38f, 1.65f);
-    public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
-    public Vector2 posicion11 = new Vector2(-7.1f, 0.82f);
+    public Vector2 posicion10 = new Vector2(-4.24f, 0.24f);
+    //public Vector2 posicion11 = new Vector2(-7.1f, 0.82f);
 
 
 
@@ -41,7 +41,7 @@ public class Operaciones_Dificiil : MonoBehaviour
         posiciones.Add(posicion8);
         posiciones.Add(posicion9);
         posiciones.Add(posicion10);
-        posiciones.Add(posicion11);
+        //posiciones.Add(posicion11);
 
         // Generar un índice aleatorio
         int indiceAleatorio = Random.Range(0, posiciones.Count);

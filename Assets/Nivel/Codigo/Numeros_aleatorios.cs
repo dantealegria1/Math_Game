@@ -21,7 +21,7 @@ public class Numeros_aleatorios : MonoBehaviour
     public Vector2 posicion7 = new Vector2(35.05f, -2f);
     public Vector2 posicion8 = new Vector2(31f, -2f);
     public Vector2 posicion9 = new Vector2(10.38f, 1.65f);
-    public Vector2 posicion10 = new Vector2(0.71f, -1.82f);
+    public Vector2 posicion10 = new Vector2(-4.24f, 0.26f);
 
 
     public TextMeshProUGUI Ayuda;
