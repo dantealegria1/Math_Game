@@ -49,16 +49,20 @@ public class Operaciones_Dificiil : MonoBehaviour
         // Obtener la posición aleatoria
         Vector2 posicionAleatoria = posiciones[indiceAleatorio];
 
-
+        int Resultado;
+        int Operando1;
+        int Operando2;
         // Establecer la posición del objeto Numero_1
         Numero_1.transform.position = posicionAleatoria;
+        do
+        {
+            // Generate random operands
+             Operando1 = Random.Range(1, 11);
+             Operando2 = Random.Range(1, 11);
 
-        // Generate random operands
-        int Operando1 = Random.Range(1, 5);
-        int Operando2 = Random.Range(1, 6);
-
-        // Calculate the result
-        int Resultado = Operando1 * Operando2;
+            // Calculate the result
+            Resultado = Operando1 * Operando2;
+        } while (Resultado > 20);
         Ayuda.text = Resultado.ToString();
 
         // Set the text of Operacioncita to display the random operands
