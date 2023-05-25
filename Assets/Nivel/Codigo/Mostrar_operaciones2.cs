@@ -52,6 +52,8 @@ public class Mostrar_operaciones2 : MonoBehaviour
 
         // Establecer la posición del objeto Numero_1
         Numero_1.transform.position = posicionAleatoria;
+        
+
 
         // Generate random operands
         int Operando1 = Random.Range(1, 10);

@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel_2_nice - Dificil.unity
     guid: 23193094d91237449b44a1d2c6b716ae
+  - enabled: 1
+    path: Assets/Scenes/instruccion.unity
+    guid: effd11365ea54fa449e13676ef8aa44e
   m_configObjects: {}
